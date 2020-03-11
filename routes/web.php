@@ -1,6 +1,9 @@
 <?php
 
+use App\Album;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get ( '/advSearch','SearchController@advSearch')->name('advSearch');
+Route::any ( '/search','SearchController@search')->name('search');
+Route::any ( '/search','SearchController@sort')->name('sort');
+
+
