@@ -8,6 +8,11 @@
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
+	<div class="menu_nav">
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/advSearch">advSearch</a></li>
+		</ul>
 	<div class="container">
 		<form action="/search" method="POST" role="search">
 			{{ csrf_field() }}
